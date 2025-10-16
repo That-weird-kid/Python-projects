@@ -6,17 +6,22 @@ def func(number):
         if number % i == 0:
             numDivisibles.append(i)
         if numDivisibles == []:
-            return False
-        return True
+            return True
+        return False
         print(numdivisibles)
 a = random.choice(range(1,101))
-print(a)    
+print(a)
+b = func(a)
 inputt = input("is it a prime  y/n:")
-print(func(a))
-if inputt == n:
-    if a == False:
+if inputt == "n":
+    if b == False:
         print("bravo")
     else:
         print(numDivisibles)
-if inputt:
-    
+if inputt == "y":
+    if b == True:
+        print ("bravo")
+        print(numDivisibles)
+    else:
+        print("bad")
+        print(numDivisibles)
